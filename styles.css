@@ -55,6 +55,10 @@ nav a {
     color: #fff;
 }
 
+.about-us{
+    text-align: center;
+    font: arial, helvetica;
+}
 
 /* Services section styles */
 .services-section {
