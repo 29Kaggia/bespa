@@ -19,13 +19,13 @@ body {
     color: #fff;
     padding: 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between; 
     align-items: center;
 }
 
 .logo img {
-    width: 50px; 
-    border-radius: 50%; 
+    width: 50px;
+    border-radius: 50%;
 }
 
 .header-content {
@@ -35,19 +35,18 @@ body {
 
 h1 {
     margin: 0;
-    margin-left: 10px; 
+    margin-left: 10px;
+    margin-right: 450px;
 }
 
 nav ul {
     list-style: none;
-    margin-left: 600px;
     padding: 0;
     display: flex;
-    justify-content: right;
 }
 
 nav ul li {
-    margin-left: 20px; 
+    margin-left: 10px;
 }
 
 nav a {
@@ -55,10 +54,32 @@ nav a {
     color: #fff;
 }
 
-.about-us{
+.about-us, .our-mission{
     text-align: center;
     font: arial, helvetica;
+    margin-top: 50px;
 }
+
+.our-mission {
+    color: #fff;
+    padding: 50px 0; 
+}
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 5px; 
+}
+
+.about-image {
+    width: 100%; 
+    height: auto;
+    margin: 10px; 
+}
+
+.container {
+    padding: 20px; 
+}
+
 
 /* Services section styles */
 .services-section {
@@ -88,18 +109,31 @@ h2 {
    
 } */
 
-.service-card{
+.service-image {
+    height: 700px;
+    max-width: 600px; 
+    margin-right: 20px; 
+    object-fit:cover;
+}
+
+.text-content {
+    flex: 1; 
+    text-align: left;
+}
+
+.service-card {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
     overflow: hidden;
-    flex-basis: calc(50% - 20px);
+    flex-basis: calc(50% -20px);
     box-sizing: border-box;
-    background-color: #ffffff; 
-    border: 1px solid #b3ccf0; 
+    background-color: #ffffff;
+    border: 1px solid #b3ccf0;
     margin-bottom: 20px;
 }
+
 .service-card h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
@@ -110,16 +144,18 @@ h2 {
 }
 
 .service-details {
-    font-size: 1.1em;
+    font-size: 1.0em;
     line-height: 1.6;
     padding: 20px;
     margin-top: 15px;
     border: none;
     outline: none;
-    display: none;
+    display: flex;
+    align-items: center;
+    /* display: none; */
 }
 .service-card:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover for visual feedback */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 .service-details p {
     margin-bottom: 10px;
